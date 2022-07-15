@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập vào số tiền gửi ban đầu:");
+    let month = +prompt("Nhập vào số tháng gửi tiền:");
+    let laiSuat = 5/100;
+
+    for (let i=1; i<=month; i++) {
+        money = money * (1 + laiSuat);
+    }
+
+    alert("Số tiền cuối nhận được:" + money);
+</script>
+</body>
+</html>
